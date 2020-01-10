@@ -49,4 +49,16 @@ class TestCircle {
 			}
 		}
 	}
+	
+	@Test
+	void translateCircle() {
+		Point pA = new Point("pA", 10, 10);
+		Circle cA = new Circle("cA", 12.0, pA);
+		
+		System.out.println("init : " + cA);
+		cA.translate(2, 3);
+		System.out.println("after translate circle: " + cA);
+		pA.translate(2, 3);
+		System.out.println("after translate point: " + cA);
+	}
 }

@@ -48,7 +48,8 @@ class TestPoint {
 	@Test 
 	void testTranslate() {
 		Point pA = new Point("A", 3, 4);
+		System.out.println("before : " + pA);
 		pA.translate(2, 3);
-		System.out.println(pA);
+		System.out.println("after : " + pA);
 	}
 }
