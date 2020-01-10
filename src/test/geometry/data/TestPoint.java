@@ -45,4 +45,10 @@ class TestPoint {
 		System.out.println(d2);
 	}
 	
+	@Test 
+	void testTranslate() {
+		Point pA = new Point("A", 3, 4);
+		pA.translate(2, 3);
+		System.out.println(pA);
+	}
 }
